@@ -1,0 +1,72 @@
+.student-details-container {
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 5px 20px 20px 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    max-height: auto;
+    margin: 50px 0px 0px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.student-details-container h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f8f9fa;
+    border-bottom: 2px solid #495057;
+    padding-bottom: 10px;
+}
+
+.student-details-container h3 {
+    font-size: 22px;
+    padding-top: 20px;
+    color: #f8f9fa;
+    border-bottom: 2px solid #495057;
+}
+
+.student-details-container p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.student-details-container span {
+    font-weight: bolder;
+    padding-right: 10px;
+}
+
+.student-details-container ul {
+    margin-bottom: 50px;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.student-details-container ul li {
+    background-color: #495057;
+    color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.student-details-container ul li:hover {
+    background-color: #6c757d;
+}
+
+.navigation-links {
+    margin-top: 20px;
+}
+
+.student-details-container a {
+    background-color: #007bff;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.student-details-container a:hover {
+    background-color: #0056b3;
+}

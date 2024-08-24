@@ -1,0 +1,55 @@
+.instructor-details-container {
+    background-color: #212529;
+    color: #FFFFFF;
+    padding: 5px 20px 20px 20px;
+    border-radius: 15px;
+    max-width: 600px;
+    max-height: auto;
+    margin: 50px 0px 0px 0px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.instructor-details-container h2 {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.instructor-details-container p {
+    color: #CED4DA;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.instructor-details-container h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.instructor-details-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.instructor-details-container ul li {
+    background-color: #495057;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+.instructor-details-container a {
+    background-color: #007bff;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.instructor-details-container a:hover {
+    background-color: #0056b3;
+}

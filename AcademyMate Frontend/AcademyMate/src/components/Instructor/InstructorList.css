@@ -1,0 +1,121 @@
+.instructor-list-container {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.instructor-table {
+  width: 100%;
+  border-collapse: separate; /* Use 'separate' to allow rounded corners */
+  border-spacing: 0; /* Ensure cells are touching */
+  margin-bottom: 20px;
+  border: 1px solid #ddd; /* Overall table border */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.instructor-table th,
+.instructor-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.instructor-table th {
+  cursor: pointer;
+  background-color: #212529;
+  color: white;
+}
+
+.instructor-table tr:nth-child(even) {
+  background-color: #f9f9f9; /* Lighter stripe */
+}
+
+.instructor-table tr:nth-child(odd) {
+  background-color: #fff; /* Regular row color */
+}
+
+.instructor-table tr:hover {
+  background-color: #f1f1f1; /* Hover effect */
+}
+
+.instructor-table th:first-child {
+  border-top-left-radius: 12px;
+}
+
+.instructor-table th:last-child {
+  border-top-right-radius: 12px;
+}
+
+.instructor-table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.instructor-table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.pagination button:hover {
+  background-color: #ddd;
+}
+
+.add-instructor-button {
+  margin: 20px;
+  margin-left: 0;
+  padding: 10px 20px;
+  background-color: hsl(211, 100%, 50%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: large;
+}
+
+.add-instructor-button:hover {
+  background-color: #0056b3;
+}
+
+.action-button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.update-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.update-button:hover {
+  background-color: #45a049;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #da190b;
+}
+
+.instructor-list-container a {
+  color: #0000FF;
+  text-decoration: none;
+}
