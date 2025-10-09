@@ -5,35 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fafcb727-9034-43fe-b418-20648c72bd6b" name="Changes" comment="Combining BE and FE">
-      <change afterPath="$PROJECT_DIR$/.idea/AcademyMate Project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/99b2a9f8-55bf-472c-8925-eef80d04604b/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/99b2a9f8-55bf-472c-8925-eef80d04604b/storage_v2/_src_/schema/mysql.osA4Bg.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/99b2a9f8-55bf-472c-8925-eef80d04604b/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/99b2a9f8-55bf-472c-8925-eef80d04604b/storage_v2/_src_/schema/sys.zb4BAA.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_blame.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/resources/ehcache.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/controller/CourseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/controller/CourseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/controller/InstructorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/controller/InstructorController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/controller/StudentController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/dao/AppDAO.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/dao/AppDAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/Course.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/Instructor.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/Instructor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/InstructorDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/InstructorDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/java/com/vikas/AcademyMate/entity/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Frontend/AcademyMate/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Frontend/AcademyMate/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AcademyMate Frontend/AcademyMate/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/AcademyMate Frontend/AcademyMate/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +28,9 @@
     &quot;accountId&quot;: &quot;e9d4e659-fe51-43ef-8d4e-c6c49eef7d29&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;6413b4ff&quot;,
   &quot;associatedIndex&quot;: 6
@@ -110,7 +86,7 @@
       <workItem from="1760031295373" duration="31000" />
       <workItem from="1760031334599" duration="3290000" />
       <workItem from="1760038463105" duration="512000" />
-      <workItem from="1760038990293" duration="437000" />
+      <workItem from="1760038990293" duration="850000" />
     </task>
     <task id="LOCAL-00001" summary="Combining BE and FE">
       <option name="closed" value="true" />
@@ -128,7 +104,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724479972401</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Combining BE and FE">
+      <option name="closed" value="true" />
+      <created>1760039455682</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760039455682</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Combining BE and FE">
+      <option name="closed" value="true" />
+      <created>1760039649783</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760039649783</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
