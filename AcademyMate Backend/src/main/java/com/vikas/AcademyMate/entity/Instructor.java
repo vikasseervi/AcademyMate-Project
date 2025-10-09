@@ -5,12 +5,15 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
-
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.annotations.Cache;
 
 @Entity
 @Table(name = "instructor")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE,
+        region = "instructorCache")
 public class Instructor {
 
     @Id
@@ -24,7 +27,7 @@ public class Instructor {
     @Column(name = "email")
     private String email;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "instructor_detail_id")
     @JsonManagedReference
     private InstructorDetail instructorDetail;
@@ -32,7 +35,6 @@ public class Instructor {
     @OneToMany(mappedBy = "instructor",
             fetch = FetchType.LAZY,
             cascade = { CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH })
-//    @JsonManagedReference
     @JsonIgnore
     private List<Course> courses;
 

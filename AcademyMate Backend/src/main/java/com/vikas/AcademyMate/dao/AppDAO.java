@@ -4,9 +4,15 @@ import com.vikas.AcademyMate.entity.Course;
 import com.vikas.AcademyMate.entity.Instructor;
 import com.vikas.AcademyMate.entity.InstructorDetail;
 import com.vikas.AcademyMate.entity.Student;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
 
+/**
+ * Deprecated: Use dedicated DAOs per aggregate (e.g., StudentDAO, CourseDAO, InstructorDAO, InstructorDetailDAO)
+ * located under com.vikas.AcademyMate.dao.* packages.
+ */
+@Deprecated
 public interface AppDAO {
     void save(Instructor instructor);
 

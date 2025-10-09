@@ -1,15 +1,18 @@
 package com.vikas.AcademyMate.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.annotations.Cache;
 
 @Entity
 @Table(name = "course")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE,
+        region = "courseCache")
 public class Course {
 
     @Id

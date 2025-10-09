@@ -2,9 +2,13 @@ package com.vikas.AcademyMate.entity;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.annotations.Cache;
 
 @Entity
 @Table(name = "instructor_detail")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region = "instructorDetailCache")
+
 public class InstructorDetail {
 
     // Referencing the Instructor..... for Bi-relational cascading except deleting

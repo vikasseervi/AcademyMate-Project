@@ -3,13 +3,17 @@ package com.vikas.AcademyMate.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Fetch;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.annotations.Cache;
 
 @Entity
 @Table(name = "student")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE,
+        region = "studentCache")
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

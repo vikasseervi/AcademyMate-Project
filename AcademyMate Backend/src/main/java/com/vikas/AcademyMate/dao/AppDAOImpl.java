@@ -12,13 +12,12 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Deprecated
 @Repository
 public class AppDAOImpl implements AppDAO{
 
-    // define field for entity manager
     private EntityManager entityManager;
 
-    // inject entity manager using constructor injection
     @Autowired
     public AppDAOImpl(EntityManager entityManager){
         this.entityManager = entityManager;
@@ -93,11 +92,9 @@ public class AppDAOImpl implements AppDAO{
 
     @Override
     public List<Course> findCourseByInstructorId(int id) {
-        // create query
         TypedQuery<Course> query = entityManager.createQuery(
                 "from Course where instructor.id = :data", Course.class);
         query.setParameter("data", id);
-        // execute query
         List<Course> courses = query.getResultList();
         return courses;
     }

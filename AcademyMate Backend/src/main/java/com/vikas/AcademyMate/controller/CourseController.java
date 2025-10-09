@@ -1,6 +1,6 @@
 package com.vikas.AcademyMate.controller;
 
-import com.vikas.AcademyMate.dao.AppDAO;
+import com.vikas.AcademyMate.dao.course.CourseDAO;
 import com.vikas.AcademyMate.entity.Course;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -13,29 +13,29 @@ import java.util.List;
 @RequestMapping("/academymate/courses")
 public class CourseController {
 
-    private final AppDAO appDAO;
+    private final CourseDAO courseDAO;
 
     @Autowired
-    public CourseController(AppDAO appDAO) {
-        this.appDAO = appDAO;
+    public CourseController(CourseDAO courseDAO) {
+        this.courseDAO = courseDAO;
     }
 
     @PostMapping
     public ResponseEntity<Course> createCourse(@RequestBody Course course) {
-        appDAO.save(course); // Ensure save method is appropriate for Course
+        courseDAO.save(course);
         return ResponseEntity.status(HttpStatus.CREATED).body(course);
     }
 
     @GetMapping
     public ResponseEntity<List<Course>> getAllCourses() {
         System.out.println("GETTING ALL COURSES");
-        List<Course> courses = appDAO.findAllCourses(); // Assume this method is implemented in your DAO
+        List<Course> courses = courseDAO.findAll();
         return ResponseEntity.ok(courses);
     }
 
     @GetMapping("/{id}")
     public ResponseEntity<Course> getCourseById(@PathVariable int id) {
-        Course course = appDAO.findCourseById(id); // Assume this method is implemented in your DAO
+        Course course = courseDAO.findById(id);
         if (course != null) {
             return ResponseEntity.ok(course);
         } else {
@@ -46,14 +46,14 @@ public class CourseController {
     @PutMapping("/{id}")
     public ResponseEntity<Course> updateCourse(@PathVariable int id, @RequestBody Course updatedCourse) {
         System.out.println(updatedCourse.toString());
-        appDAO.update(updatedCourse);
+        courseDAO.update(updatedCourse);
         return ResponseEntity.ok(updatedCourse);
     }
 
     @DeleteMapping("/{courseId}/student/{studentId}")
     public ResponseEntity<String> deleteStudentFromCourse(@PathVariable int courseId, @PathVariable int studentId) {
         try {
-            appDAO.deleteStudentFromCourse(courseId, studentId);
+            courseDAO.deleteStudentFromCourse(courseId, studentId);
             return ResponseEntity.ok("Student removed from course successfully.");
         } catch (Exception e) {
             e.printStackTrace();
@@ -64,7 +64,7 @@ public class CourseController {
     @PostMapping("/{courseId}/student/{studentId}")
     public ResponseEntity<String> addStudentToCourse(@PathVariable int courseId, @PathVariable int studentId) {
         try {
-            appDAO.addStudentToCourse(courseId, studentId);
+            courseDAO.addStudentToCourse(courseId, studentId);
             return ResponseEntity.status(HttpStatus.CREATED).body("Student added to course successfully.");
         } catch (Exception e) {
             e.printStackTrace();
@@ -74,7 +74,7 @@ public class CourseController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteCourse(@PathVariable int id) {
-        appDAO.deleteCourseById(id);
+        courseDAO.deleteById(id);
         return ResponseEntity.noContent().build();
     }
 }
