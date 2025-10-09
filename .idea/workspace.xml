@@ -86,7 +86,7 @@
       <workItem from="1760031295373" duration="31000" />
       <workItem from="1760031334599" duration="3290000" />
       <workItem from="1760038463105" duration="512000" />
-      <workItem from="1760038990293" duration="850000" />
+      <workItem from="1760038990293" duration="1276000" />
     </task>
     <task id="LOCAL-00001" summary="Combining BE and FE">
       <option name="closed" value="true" />
@@ -120,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760039649783</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Combining BE and FE">
+      <option name="closed" value="true" />
+      <created>1760040041351</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760040041351</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

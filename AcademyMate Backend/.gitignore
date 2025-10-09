@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+AcademyMate Backend/src/main/java/com/vikas/AcademyMate/dao/AppDAO.java
+AcademyMate Backend/src/main/java/com/vikas/AcademyMate/dao/AppDAOImpl.java
